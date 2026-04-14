@@ -1,0 +1,374 @@
+﻿body {
+    background: radial-gradient(circle at top, rgba(204, 170, 131, 0.08), transparent 28%), var(--light);
+}
+
+.treatments-hero {
+    padding: 150px 0 84px;
+    position: relative;
+    z-index: 2;
+}
+
+.treatments-hero-shell {
+    width: min(1280px, calc(100% - 40px));
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+    gap: 28px;
+    align-items: center;
+}
+
+.treatments-hero-copy {
+    max-width: 760px;
+}
+
+.treatments-hero .page-title {
+    font-size: clamp(2.8rem, 5vw, 5rem);
+    line-height: 1.02;
+    margin: 16px 0 18px;
+}
+
+.treatments-hero .page-description {
+    max-width: 620px;
+    font-size: 1.08rem;
+    line-height: 1.85;
+}
+
+.treatments-hero-card,
+.signal-card,
+.treatments-nav-shell,
+.service-card-detail,
+.consultation-cta-box {
+    border: 1px solid rgba(156, 115, 73, 0.12);
+    box-shadow: var(--shadow);
+}
+
+.treatments-hero-card {
+    padding: 30px;
+    border-radius: 32px;
+    background: linear-gradient(135deg, rgba(31, 25, 23, 0.98), rgba(48, 37, 31, 0.94));
+}
+
+.treatments-hero-card h2 {
+    color: #fff;
+    font-size: 1.95rem;
+    line-height: 1.16;
+    margin-bottom: 14px;
+}
+
+.treatments-hero-card p {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.treatment-signals,
+.treatments-nav-section,
+.treatments-section,
+.consultation-cta {
+    position: relative;
+    z-index: 2;
+}
+
+.treatment-signals {
+    padding-bottom: 40px;
+}
+
+.treatments-nav-section {
+    padding-bottom: 42px;
+}
+
+.treatments-nav-shell {
+    width: min(1280px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 28px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.treatments-nav-copy {
+    margin-bottom: 22px;
+}
+
+.treatments-nav-copy .section-title {
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    margin-top: 10px;
+}
+
+.category-jump-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.category-jump-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 20px;
+    border-radius: 999px;
+    border: 1px solid rgba(156, 115, 73, 0.16);
+    background: rgba(255, 255, 255, 0.92);
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, color 0.25s ease, background 0.25s ease;
+}
+
+.category-jump-links a:hover {
+    color: #fff;
+    background: linear-gradient(135deg, var(--accent), var(--accent-light));
+    box-shadow: 0 12px 24px rgba(156, 115, 73, 0.2);
+    transform: translateY(-2px);
+}
+
+.treatments-section {
+    padding-bottom: 96px;
+}
+
+.treatments-container {
+    width: min(1280px, calc(100% - 40px));
+    margin: 0 auto;
+    display: grid;
+    gap: 80px;
+}
+
+.category-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 24px;
+    align-items: end;
+    margin-bottom: 26px;
+}
+
+.category-kicker {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.category-intro h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.05;
+    margin-bottom: 12px;
+}
+
+.category-intro p {
+    max-width: 720px;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+.category-note {
+    padding: 20px 22px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid rgba(156, 115, 73, 0.1);
+}
+
+.category-note strong {
+    display: block;
+    color: var(--dark);
+    margin-bottom: 8px;
+}
+
+.category-note span {
+    display: block;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.service-card-detail {
+    overflow: hidden;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.94);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card-detail:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.service-card-image {
+    aspect-ratio: 5 / 4;
+    overflow: hidden;
+}
+
+.service-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.55s ease;
+}
+
+.service-card-detail:hover .service-card-image img {
+    transform: scale(1.04);
+}
+
+.service-card-info {
+    padding: 26px;
+}
+
+.service-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.service-time {
+    padding: 7px 12px;
+    border-radius: 999px;
+    background: var(--secondary);
+    color: var(--dark);
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.service-price-detail {
+    color: var(--accent);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+}
+
+.service-card-info h3 {
+    font-size: 1.5rem;
+    line-height: 1.15;
+    margin-bottom: 12px;
+}
+
+.service-card-info p {
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.service-tags span {
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(243, 236, 229, 0.96);
+    color: var(--dark);
+    font-size: 0.84rem;
+}
+
+.consultation-cta {
+    padding-bottom: 110px;
+}
+
+.consultation-cta-box {
+    padding: 38px;
+    border-radius: 34px;
+    background: linear-gradient(135deg, rgba(31, 25, 23, 0.98), rgba(48, 37, 31, 0.94));
+}
+
+.consultation-cta-box .section-kicker,
+.consultation-cta-box .section-title,
+.consultation-cta-box .section-copy,
+.consultation-note {
+    color: #fff;
+}
+
+.consultation-cta-box .section-title {
+    margin-top: 12px;
+}
+
+.consultation-cta-box .section-copy {
+    margin-top: 14px;
+    max-width: 760px;
+}
+
+.consultation-note {
+    margin-top: 18px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.94rem;
+}
+
+.consultation-cta-box .btn-outline {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.consultation-cta-box .btn-outline:hover {
+    background: rgba(255, 255, 255, 0.16);
+}
+
+@media (max-width: 1180px) {
+    .treatments-hero-shell,
+    .signal-grid,
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .treatments-hero-shell,
+    .category-intro,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 860px) {
+    .treatments-hero {
+        padding: 128px 0 72px;
+    }
+
+    .treatments-hero-shell,
+    .signal-grid,
+    .treatments-container,
+    .section-shell,
+    .treatments-nav-shell {
+        width: min(1280px, calc(100% - 24px));
+        grid-template-columns: 1fr;
+    }
+
+    .category-jump-links {
+        flex-direction: column;
+    }
+
+    .category-jump-links a {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .treatments-hero .page-title {
+        font-size: 2.45rem;
+    }
+
+    .treatments-hero .page-description,
+    .signal-card span,
+    .category-intro p,
+    .category-note span,
+    .service-card-info p,
+    .consultation-cta-box .section-copy {
+        font-size: 0.98rem;
+    }
+
+    .treatments-hero-card,
+    .treatments-nav-shell,
+    .service-card-info,
+    .consultation-cta-box {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+

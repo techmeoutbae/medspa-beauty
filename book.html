@@ -1,0 +1,450 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Consultation | Lumina Beauty</title>
+    <meta name="author" content="Built by Architech Designs">
+    <meta name="description" content="Book a private consultation with Lumina Beauty and explore a premium med spa booking flow with concierge-style UX, interactive scheduling, FAQ support, and Google Maps directions.">
+    
+    <meta name="theme-color" content="#1f1917">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Book a Consultation | Lumina Beauty">
+    <meta property="og:description" content="Book a private consultation with Lumina Beauty and explore a premium med spa booking flow with concierge-style UX, interactive scheduling, FAQ support, and Google Maps directions.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:site_name" content="Lumina Beauty">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What happens at my first consultation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your first visit includes a conversation about goals, comfort level, event timing, budget, and any questions about downtime. You will leave with clear recommendations and next-step guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to know exactly which treatment I want?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. You can book a consultation-only appointment or take the treatment quiz first if you want directional guidance before your visit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly will someone follow up?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most new consultation inquiries receive a response within one business day. Urgent event-related requests can often be prioritized when availability allows."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer payment plans?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Flexible financing and maintenance planning can be reviewed during your consultation so treatment plans feel more manageable and transparent."
+      }
+    }
+  ]
+}
+</script>
+        <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="book.css">
+</head>
+<body class="has-agency-banner">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="bubbles-container" id="bubbles"></div>
+
+    <div class="agency-banner"><a href="medspa-case-study.html">Back to Architech Designs</a><span>Viewing the Lumina Beauty premium portfolio demo.</span></div>
+
+    <nav class="navbar" id="navbar" aria-label="Primary navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="Lumina Beauty home">
+                <span class="logo-icon">✦</span>
+                <span class="logo-text">Lumina</span>
+                <span class="logo-sub">Beauty</span>
+            </a>
+            <div class="nav-badge">Interactive consultation scheduling</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="treatments.html">Treatments</a></li>
+                <li><a href="before-after.html">Before &amp; After</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="book.html" class="nav-cta active">Book Now</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="book-hero">
+            <div class="book-hero-shell">
+                <div class="book-hero-copy" data-reveal>
+                    <p class="page-subtitle">Private consultation</p>
+                    <h1 class="page-title">Book a calm, high-touch consultation that makes the next step feel clear.</h1>
+                    <p class="page-description">This page is designed to convert: stronger reassurance, a cleaner form, visible response expectations, an interactive calendar, built-in FAQs, and direct Google Maps access for local intent.</p>
+                    <div class="hero-actions">
+                        <a href="#consultation-form" class="btn btn-primary">Start Booking</a>
+                        <a href="quiz.html" class="btn btn-outline">Take Treatment Quiz First</a>
+                    </div>
+                </div>
+                <aside class="book-hero-card" data-reveal>
+                    <p class="panel-kicker">What to expect</p>
+                    <h2>We typically respond to new consultation requests within one business day.</h2>
+                    <ul class="hero-checklist">
+                        <li>Private consultation and treatment planning</li>
+                        <li>Transparent pricing and downtime discussion</li>
+                        <li>Directions, prep notes, and aftercare guidance</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section class="booking-signals section-shell">
+            <div class="signal-grid">
+                <article class="signal-card" data-reveal>
+                    <strong>Consultation-first</strong>
+                    <span>We start with your goals before recommending services.</span>
+                </article>
+                <article class="signal-card" data-reveal>
+                    <strong>Interactive scheduling</strong>
+                    <span>Choose a preferred date and time from a curated consultation calendar.</span>
+                </article>
+                <article class="signal-card" data-reveal>
+                    <strong>Private appointments</strong>
+                    <span>A quieter, more personalized care environment.</span>
+                </article>
+                <article class="signal-card" data-reveal>
+                    <strong>Directions built in</strong>
+                    <span>One-tap path to Google Maps for local visitors.</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="book-main-section" id="consultation-form">
+            <div class="book-main-container">
+                <aside class="book-info-side" data-reveal>
+                    <p class="section-kicker">How the process works</p>
+                    <h2>Thoughtful booking for premium clients who want clarity first.</h2>
+                    <p class="book-info-intro">Use this form to request a consultation, preferred timing, and service interest. The left side of the layout is intentionally doing conversion work: reassuring, educating, and reducing hesitation.</p>
+
+                    <div class="booking-steps">
+                        <article class="booking-step">
+                            <span>01</span>
+                            <div>
+                                <h3>Tell us what you are interested in</h3>
+                                <p>Select a treatment category or request a general consultation if you want recommendations first.</p>
+                            </div>
+                        </article>
+                        <article class="booking-step">
+                            <span>02</span>
+                            <div>
+                                <h3>Choose a date and preferred time</h3>
+                                <p>The calendar below creates a more tangible scheduling experience for demo visitors and future clients.</p>
+                            </div>
+                        </article>
+                        <article class="booking-step">
+                            <span>03</span>
+                            <div>
+                                <h3>Receive next-step guidance</h3>
+                                <p>Our team follows up with confirmation, recommendations, and visit details.</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="book-contact-list">
+                        <div class="book-contact-item">
+                            <div class="contact-icon-large">Location</div>
+                            <div>
+                                <h4>Studio</h4>
+                                <p>123 Beauty Lane, Suite 100<br>Beverly Hills, CA 90210</p>
+                            </div>
+                        </div>
+                        <div class="book-contact-item">
+                            <div class="contact-icon-large">Phone</div>
+                            <div>
+                                <h4>Call or Text</h4>
+                                <p><a href="tel:310555BEAUTY">(310) 555-BEAUTY</a></p>
+                            </div>
+                        </div>
+                        <div class="book-contact-item">
+                            <div class="contact-icon-large">Email</div>
+                            <div>
+                                <h4>Client Concierge</h4>
+                                <p><a href="mailto:hello@luminabeauty.com">hello@luminabeauty.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="book-form-side" data-reveal>
+                    <form class="booking-form-full" id="bookingFormFull">
+                        <div class="form-heading">
+                            <p class="section-kicker">Request your consultation</p>
+                            <h3>Book your visit</h3>
+                            <p>Complete the form below and we will follow up with scheduling options, availability, and next-step guidance.</p>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstname">First Name *</label>
+                                <input id="firstname" type="text" name="firstname" placeholder="First name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Last Name *</label>
+                                <input id="lastname" type="text" name="lastname" placeholder="Last name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input id="email" type="email" name="email" placeholder="you@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone *</label>
+                                <input id="phone" type="tel" name="phone" placeholder="(555) 555-5555" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Interested Service *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Choose a service...</option>
+                                <option value="facial">Luxury Facial</option>
+                                <option value="injectables">Injectables (Botox/Filler)</option>
+                                <option value="lashes">Lash &amp; Brow Treatments</option>
+                                <option value="laser">Laser Treatments</option>
+                                <option value="hydrafacial">HydraFacial</option>
+                                <option value="peel">Chemical Peel</option>
+                                <option value="consultation">Consultation Only</option>
+                            </select>
+                        </div>
+
+                        <section class="calendar-booking" id="consultationCalendar" aria-labelledby="calendar-title">
+                            <div class="calendar-heading">
+                                <p class="section-kicker">Select a time</p>
+                                <h4 id="calendar-title">Choose a preferred consultation date</h4>
+                            </div>
+                            <div class="calendar-shell">
+                                <div class="calendar-header">
+                                    <button type="button" class="calendar-nav-btn" id="calendarPrev" aria-label="Previous month">‹</button>
+                                    <div class="calendar-month-wrap">
+                                        <span class="calendar-label">Availability</span>
+                                        <strong id="calendarMonth">Month</strong>
+                                    </div>
+                                    <button type="button" class="calendar-nav-btn" id="calendarNext" aria-label="Next month">›</button>
+                                </div>
+                                <div class="calendar-weekdays">
+                                    <span>Mon</span>
+                                    <span>Tue</span>
+                                    <span>Wed</span>
+                                    <span>Thu</span>
+                                    <span>Fri</span>
+                                    <span>Sat</span>
+                                    <span>Sun</span>
+                                </div>
+                                <div class="calendar-grid" id="calendarGrid"></div>
+                                <div class="calendar-time-panel">
+                                    <div class="calendar-time-header">
+                                        <div>
+                                            <span class="calendar-label">Available times</span>
+                                            <strong id="selectedDateLabel">Choose a date to view openings</strong>
+                                        </div>
+                                    </div>
+                                    <div class="time-slot-grid" id="timeSlotGrid"></div>
+                                </div>
+                                <div class="calendar-selection" id="calendarSelection" role="status" aria-live="polite">No consultation slot selected yet.</div>
+                            </div>
+                        </section>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Selected Date *</label>
+                                <input id="date" type="text" name="date" placeholder="Choose from calendar above" readonly required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Selected Time *</label>
+                                <input id="time" type="text" name="time" placeholder="Choose a time slot" readonly required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Tell us about your goals</label>
+                            <textarea id="message" name="message" placeholder="What are you hoping to improve or learn more about?"></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Send me occasional treatment news, launch updates, and private offers</label>
+                        </div>
+
+                        <div class="form-helper-row">
+                            <span>Typical reply time: within one business day</span>
+                            <span>Private consultations available</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-full">Request Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="book-faq-section section-shell">
+            <div class="section-heading align-left" data-reveal>
+                <div>
+                    <p class="section-kicker">Booking questions</p>
+                    <h2 class="section-title">Common concerns that can block conversion, answered clearly.</h2>
+                </div>
+                <p class="section-copy">A premium booking page should reduce uncertainty around timing, downtime, pricing, and first-visit expectations.</p>
+            </div>
+            <div class="book-faq-grid">
+                <article class="faq-item" data-reveal>
+                    <button class="faq-toggle" type="button" aria-expanded="false">
+                        <span>What happens at my first consultation?</span>
+                        <span class="faq-icon-home">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Your first visit includes a conversation about goals, comfort level, event timing, budget, and any questions about downtime. You will leave with clear recommendations and next-step guidance.</p>
+                    </div>
+                </article>
+                <article class="faq-item" data-reveal>
+                    <button class="faq-toggle" type="button" aria-expanded="false">
+                        <span>Do I need to know exactly which treatment I want?</span>
+                        <span class="faq-icon-home">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No. You can book a consultation-only appointment or take the treatment quiz first if you want directional guidance before your visit.</p>
+                    </div>
+                </article>
+                <article class="faq-item" data-reveal>
+                    <button class="faq-toggle" type="button" aria-expanded="false">
+                        <span>How quickly will someone follow up?</span>
+                        <span class="faq-icon-home">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most new consultation inquiries receive a response within one business day. Urgent event-related requests can often be prioritized when availability allows.</p>
+                    </div>
+                </article>
+                <article class="faq-item" data-reveal>
+                    <button class="faq-toggle" type="button" aria-expanded="false">
+                        <span>Do you offer payment plans?</span>
+                        <span class="faq-icon-home">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Flexible financing and maintenance planning can be reviewed during your consultation so treatment plans feel more manageable and transparent.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="book-faq-cta" data-reveal>
+                <p>Still have questions? <a href="tel:310555BEAUTY" class="text-link">Call us</a> or <a href="quiz.html" class="text-link">take the treatment quiz</a>.</p>
+            </div>
+        </section>
+
+        <section class="book-map-section section-shell">
+            <div class="map-container" data-reveal>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.715220361917!2d-118.4003550847848!3d34.07362078060603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc04d6d147d9%3A0x11ac3f6c1e1e7e0!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1646123456789!5m2!1sen!2sus" width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="map-overlay">
+                    <div class="map-info">
+                        <p class="panel-kicker">Visit Lumina Beauty</p>
+                        <h3>Beverly Hills studio</h3>
+                        <p>123 Beauty Lane, Suite 100<br>Beverly Hills, CA 90210</p>
+                        <div class="map-actions">
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=123+Beauty+Lane+Suite+100+Beverly+Hills+CA+90210" target="_blank" rel="noopener" class="btn btn-primary">Get Directions</a>
+                            <a href="tel:310555BEAUTY" class="btn btn-outline">Call Studio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">✦</span>
+                        <span class="logo-sub">Beauty</span>
+                        <span class="logo-text">Lumina</span>
+                    </a>
+                    <p>Luxury med spa website concept built to demonstrate premium design, trust-driven conversion, and polished frontend execution.</p>
+                    <div class="footer-contact-lines">
+                        <span>123 Beauty Lane, Beverly Hills</span>
+                        <span>(310) 555-BEAUTY</span>
+                        <span>hello@luminabeauty.com</span>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="TikTok">TT</a>
+                        <a href="#" aria-label="Pinterest">PT</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="treatments.html">Treatment Menu</a></li>
+                        <li><a href="before-after.html">Before and After</a></li>
+                        <li><a href="reviews.html">Client Reviews</a></li>
+                        <li><a href="quiz.html">Treatment Quiz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Visit</h4>
+                    <ul>
+                        <li><a href="book.html">Book Consultation</a></li>
+                        <li><a href="about.html">Meet the Team</a></li>
+                        <li><a href="https://www.google.com/maps/dir/?api=1&destination=123+Beauty+Lane+Suite+100+Beverly+Hills+CA+90210" target="_blank" rel="noopener">Get Directions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Insider List</h4>
+                    <p>Join for launch events, treatment spotlights, and private offer drops.</p>
+                    <form class="newsletter-form">
+                        <label class="sr-only" for="book-newsletter-email">Email address</label>
+                        <input id="book-newsletter-email" type="email" placeholder="Email address">
+                        <button type="submit" class="btn btn-primary">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lumina Beauty. All rights reserved.</p>
+                <div class="site-credit"><span>Built by Architech Designs</span><a href="medspa-case-study.html">View Case Study</a></div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

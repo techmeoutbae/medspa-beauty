@@ -1,0 +1,32 @@
+[
+  {
+    "id": "042b4060-575f-4a21-8979-e3211cd863a6",
+    "email": "demo.991555@example.com",
+    "source": "booking-form",
+    "createdAt": "2026-04-10T15:56:21.290Z"
+  },
+  {
+    "id": "93b1970c-2942-44c6-ac48-50a07425a0c3",
+    "email": "newsletter.4f8b30@example.com",
+    "source": "newsletter-form",
+    "createdAt": "2026-04-10T15:56:21.299Z"
+  },
+  {
+    "id": "643f9b05-5c3b-495f-966d-227a3bec5e75",
+    "email": "demo.bfdf65@example.com",
+    "source": "booking-form",
+    "createdAt": "2026-04-10T20:53:00.104Z"
+  },
+  {
+    "id": "4eb994fb-e60a-4fc3-b32d-91760a983dc2",
+    "email": "newsletter.0e0639@example.com",
+    "source": "newsletter-form",
+    "createdAt": "2026-04-10T20:53:00.110Z"
+  },
+  {
+    "id": "fb123326-2257-44e4-90ce-a4aebe0d358c",
+    "email": "demo.43cf66@example.com",
+    "source": "booking-form",
+    "createdAt": "2026-04-10T20:54:13.236Z"
+  }
+]

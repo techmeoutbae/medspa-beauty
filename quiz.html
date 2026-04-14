@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treatment Quiz | Lumina Beauty</title>
+    <meta name="author" content="Built by Architech Designs">
+    <meta name="description" content="Interactive treatment quiz concept for a premium med spa website, designed to guide clients toward the right services and demonstrate conversion-focused UX.">
+    
+    <meta name="theme-color" content="#1f1917">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Treatment Quiz | Lumina Beauty">
+    <meta property="og:description" content="Interactive treatment quiz concept for a premium med spa website, designed to guide clients toward the right services and demonstrate conversion-focused UX.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:site_name" content="Lumina Beauty">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body class="has-agency-banner">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="bubbles-container" id="bubbles"></div>
+
+    <div class="agency-banner"><a href="medspa-case-study.html">Back to Architech Designs</a><span>Viewing the Lumina Beauty premium portfolio demo.</span></div>
+
+    <nav class="navbar" id="navbar" aria-label="Primary navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="Lumina Beauty home">
+                <span class="logo-icon">✦</span>
+                <span class="logo-text">Lumina</span>
+                <span class="logo-sub">Beauty</span>
+            </a>
+            <div class="nav-badge">Interactive recommendation tool</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="treatments.html">Treatments</a></li>
+                <li><a href="before-after.html">Before &amp; After</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="quiz.html" class="active">Quiz</a></li>
+                <li><a href="book.html" class="nav-cta">Book Now</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="quiz-hero">
+            <div class="quiz-hero-shell">
+                <div class="quiz-hero-copy" data-reveal>
+                    <p class="page-subtitle">Personalized recommendations</p>
+                    <h1 class="page-title">An interactive treatment quiz that turns uncertainty into a clearer next step.</h1>
+                    <p class="page-description">This tool is here to demonstrate real product thinking: give clients a low-pressure way to self-identify needs, surface likely-fit treatments, and move naturally into consultation booking.</p>
+                    <div class="hero-actions">
+                        <a href="#quiz-experience" class="btn btn-primary">Start the Quiz</a>
+                        <a href="treatments.html" class="btn btn-outline">Browse Treatments Instead</a>
+                    </div>
+                </div>
+                <aside class="quiz-hero-card" data-reveal>
+                    <p class="panel-kicker">What this quiz considers</p>
+                    <ul class="hero-checklist">
+                        <li>Skin concerns and skin type</li>
+                        <li>Aesthetic goals and desired result style</li>
+                        <li>Downtime tolerance and treatment interest</li>
+                        <li>Multiple selections for more nuanced matching</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section class="quiz-signals section-shell">
+            <div class="signal-grid">
+                <article class="signal-card" data-reveal>
+                    <strong>Multi-select logic</strong>
+                    <span>Users can choose up to two answers per question for a more realistic profile.</span>
+                </article>
+                <article class="signal-card" data-reveal>
+                    <strong>Weighted recommendations</strong>
+                    <span>Different answers contribute differently to final treatment ranking.</span>
+                </article>
+                <article class="signal-card" data-reveal>
+                    <strong>Reason-based results</strong>
+                    <span>Each recommendation is tied back to the visitor’s selected goals and concerns.</span>
+                </article>
+                <article class="signal-card" data-reveal>
+                    <strong>Conversion-ready output</strong>
+                    <span>Results naturally transition into treatment exploration and booking.</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="quiz-section" id="quiz-experience">
+            <div class="quiz-layout">
+                <aside class="quiz-aside" data-reveal>
+                    <p class="section-kicker">Quiz guidance</p>
+                    <h2>Choose up to two options for each question.</h2>
+                    <p class="quiz-aside-copy">This keeps the quiz realistic for potential clients who often have more than one concern or outcome in mind.</p>
+                    <div class="quiz-status-card">
+                        <span class="status-label">Current question</span>
+                        <strong id="questionNumber">1</strong>
+                        <span class="status-copy" id="selectedCount" role="status" aria-live="polite">0 of 2 selected</span>
+                    </div>
+                    <div class="quiz-aside-list">
+                        <div><strong>Fast to complete</strong><span>Built for low-friction engagement.</span></div>
+                        <div><strong>High demo value</strong><span>Shows UX thinking on an agency portfolio site.</span></div>
+                        <div><strong>Natural next action</strong><span>Results feed directly into consultation CTAs.</span></div>
+                    </div>
+                </aside>
+
+                <div class="quiz-main" data-reveal>
+                    <div class="quiz-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <div class="progress-row">
+                            <span class="progress-text" id="progressText">Question 1 of 5</span>
+                            <span class="selection-hint" id="selectionHint">Choose up to 2 options</span>
+                        </div>
+                    </div>
+
+                    <div class="quiz-card" id="quizCard">
+                        <div class="quiz-question">
+                            <h2 id="questionText">What are your primary skin concerns?</h2>
+                            <p class="quiz-subtext">The more accurately you answer, the more tailored your recommendation will be.</p>
+                        </div>
+                        <div class="quiz-options" id="optionsContainer"></div>
+                    </div>
+
+                    <div class="quiz-nav">
+                        <button class="btn btn-outline" id="prevBtn" type="button" disabled>Previous</button>
+                        <button class="btn btn-primary" id="nextBtn" type="button" disabled>Next</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quiz-result" id="resultSection" hidden>
+            <div class="result-container">
+                <div class="result-header" data-reveal>
+                    <p class="section-kicker">Your recommendations</p>
+                    <h2>Your likely best-fit treatments</h2>
+                    <p id="resultSummary" role="status" aria-live="polite">Based on your answers, here are the treatments that best align with your goals.</p>
+                </div>
+
+                <div class="result-badges" id="resultBadges" data-reveal></div>
+                <div class="result-cards" id="resultCards"></div>
+
+                <div class="result-cta" data-reveal>
+                    <div class="result-cta-box">
+                        <h3>Ready for a real recommendation?</h3>
+                        <p>Use these results as a starting point, then book a consultation for a treatment plan tailored to your features, schedule, and comfort level.</p>
+                        <div class="hero-actions">
+                            <a href="book.html" class="btn btn-primary">Book Consultation</a>
+                            <button class="btn btn-outline" id="retakeBtn" type="button">Retake Quiz</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">✦</span>
+                        <span class="logo-sub">Beauty</span>
+                        <span class="logo-text">Lumina</span>
+                    </a>
+                    <p>Luxury med spa website concept built to demonstrate premium design, trust-driven conversion, and polished frontend execution.</p>
+                    <div class="footer-contact-lines">
+                        <span>123 Beauty Lane, Beverly Hills</span>
+                        <span>(310) 555-BEAUTY</span>
+                        <span>hello@luminabeauty.com</span>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="TikTok">TT</a>
+                        <a href="#" aria-label="Pinterest">PT</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="treatments.html">Treatment Menu</a></li>
+                        <li><a href="before-after.html">Before and After</a></li>
+                        <li><a href="reviews.html">Client Reviews</a></li>
+                        <li><a href="quiz.html">Treatment Quiz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Visit</h4>
+                    <ul>
+                        <li><a href="book.html">Book Consultation</a></li>
+                        <li><a href="about.html">Meet the Team</a></li>
+                        <li><a href="https://www.google.com/maps/dir/?api=1&destination=123+Beauty+Lane+Suite+100+Beverly+Hills+CA+90210" target="_blank" rel="noopener">Get Directions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Insider List</h4>
+                    <p>Join for launch events, treatment spotlights, and private offer drops.</p>
+                    <form class="newsletter-form">
+                        <label class="sr-only" for="quiz-newsletter-email">Email address</label>
+                        <input id="quiz-newsletter-email" type="email" placeholder="Email address">
+                        <button type="submit" class="btn btn-primary">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lumina Beauty. All rights reserved.</p>
+                <div class="site-credit"><span>Built by Architech Designs</span><a href="medspa-case-study.html">View Case Study</a></div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

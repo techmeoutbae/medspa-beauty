@@ -1,0 +1,445 @@
+﻿body {
+    background: radial-gradient(circle at top, rgba(204, 170, 131, 0.08), transparent 28%), var(--light);
+}
+
+.about-hero {
+    padding: 150px 0 90px;
+    position: relative;
+    z-index: 2;
+}
+
+.about-hero-shell,
+.story-layout,
+.facility-layout {
+    width: min(1280px, calc(100% - 40px));
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+    gap: 28px;
+    align-items: center;
+}
+
+.about-hero-copy {
+    max-width: 760px;
+}
+
+.about-hero .page-title {
+    font-size: clamp(2.8rem, 5vw, 5rem);
+    line-height: 1.02;
+    margin: 16px 0 20px;
+}
+
+.about-hero .page-description {
+    max-width: 620px;
+    font-size: 1.08rem;
+    line-height: 1.85;
+}
+
+.about-hero .hero-actions {
+    margin-top: 28px;
+}
+
+.about-hero .hero-proof {
+    margin-top: 28px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.about-hero .hero-proof-item {
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(156, 115, 73, 0.12);
+    backdrop-filter: blur(12px);
+}
+
+.about-hero .hero-proof-item strong {
+    display: block;
+    color: var(--dark);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.35rem;
+    margin-bottom: 6px;
+}
+
+.about-hero .hero-proof-item span {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+.about-hero-panel {
+    position: relative;
+}
+
+.about-hero-panel img {
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 34px;
+    box-shadow: var(--shadow-hover);
+}
+
+.about-hero-card {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+    padding: 24px;
+    border-radius: 26px;
+    background: rgba(31, 25, 23, 0.9);
+    box-shadow: var(--shadow-soft);
+}
+
+.panel-kicker {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent-light);
+    margin-bottom: 10px;
+}
+
+.about-hero-card h2 {
+    color: #fff;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.about-hero-card p {
+    color: rgba(255, 255, 255, 0.76);
+    line-height: 1.7;
+}
+
+.founder-story,
+.philosophy-section,
+.team-section,
+.facility-section,
+.recognition-section,
+.about-cta {
+    padding: 96px 0;
+}
+
+.story-media {
+    position: relative;
+}
+
+.story-main-image {
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 34px;
+    box-shadow: var(--shadow);
+}
+
+.story-plaque {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    max-width: 280px;
+    padding: 18px 20px;
+    border-radius: 22px;
+    background: rgba(31, 25, 23, 0.88);
+}
+
+.story-plaque span {
+    color: rgba(255, 255, 255, 0.84);
+    line-height: 1.6;
+}
+
+.story-content {
+    display: grid;
+    gap: 18px;
+}
+
+.story-content p {
+    line-height: 1.85;
+}
+
+.credential-grid,
+.philosophy-grid,
+.team-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.credential-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 12px;
+}
+
+.credential-card,
+.philosophy-card,
+.team-card,
+.about-cta-box {
+    border: 1px solid rgba(156, 115, 73, 0.12);
+    box-shadow: var(--shadow);
+}
+
+.credential-card {
+    padding: 22px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.88);
+}
+
+.credential-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+}
+
+.credential-card p {
+    font-size: 0.95rem;
+}
+
+.philosophy-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.philosophy-card {
+    padding: 28px 24px;
+    border-radius: 28px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(248, 241, 235, 0.94));
+}
+
+.philosophy-index {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    margin-bottom: 18px;
+    background: rgba(156, 115, 73, 0.12);
+    color: var(--accent);
+    font-family: 'Playfair Display', serif;
+}
+
+.philosophy-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.team-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.team-card {
+    overflow: hidden;
+    border-radius: 28px;
+    background: var(--surface-strong);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+}
+
+.team-card img {
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+}
+
+.team-card-body {
+    padding: 22px;
+}
+
+.team-role {
+    font-size: 0.84rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.team-card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+}
+
+.facility-layout {
+    gap: 36px;
+}
+
+.facility-features {
+    display: grid;
+    gap: 14px;
+    margin-top: 26px;
+}
+
+.feature-item {
+    display: grid;
+    gap: 4px;
+    padding: 16px 18px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(156, 115, 73, 0.1);
+}
+
+.feature-item strong {
+    color: var(--dark);
+}
+
+.feature-item span {
+    color: var(--text-muted);
+}
+
+.facility-gallery {
+    position: relative;
+    min-height: 620px;
+}
+
+.facility-main,
+.facility-secondary {
+    object-fit: cover;
+    box-shadow: var(--shadow);
+}
+
+.facility-main {
+    width: 76%;
+    height: 100%;
+    min-height: 580px;
+    border-radius: 34px;
+}
+
+.facility-secondary {
+    position: absolute;
+    right: 0;
+    bottom: 44px;
+    width: 44%;
+    aspect-ratio: 4 / 5;
+    border-radius: 28px;
+    border: 10px solid rgba(252, 248, 244, 0.94);
+}
+
+.recognition-bar {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    padding: 26px;
+    border-radius: 32px;
+    background: linear-gradient(135deg, rgba(31, 25, 23, 0.98), rgba(48, 37, 31, 0.94));
+    box-shadow: var(--shadow-hover);
+}
+
+.recognition-bar article {
+    padding: 18px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.recognition-bar strong {
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.recognition-bar span {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.92rem;
+    line-height: 1.65;
+}
+
+.about-cta-box {
+    padding: 38px;
+    border-radius: 34px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(248, 241, 235, 0.96));
+}
+
+.about-cta-box .section-title {
+    margin-top: 12px;
+}
+
+.about-cta-box .section-copy {
+    margin: 14px 0 0;
+    max-width: 720px;
+}
+
+@media (max-width: 1180px) {
+    .about-hero-shell,
+    .story-layout,
+    .facility-layout,
+    .team-grid,
+    .philosophy-grid,
+    .recognition-bar,
+    .credential-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-hero-shell,
+    .story-layout,
+    .facility-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 860px) {
+    .about-hero {
+        padding: 128px 0 72px;
+    }
+
+    .about-hero-shell,
+    .story-layout,
+    .facility-layout,
+    .credential-grid,
+    .philosophy-grid,
+    .team-grid,
+    .recognition-bar {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero-shell,
+    .story-layout,
+    .facility-layout,
+    .section-shell {
+        width: min(1280px, calc(100% - 24px));
+    }
+
+    .about-hero-panel img,
+    .story-main-image,
+    .facility-main,
+    .facility-secondary {
+        aspect-ratio: 4 / 5;
+        min-height: auto;
+        width: 100%;
+        height: auto;
+        position: static;
+        border-width: 0;
+    }
+
+    .facility-gallery {
+        min-height: auto;
+        display: grid;
+        gap: 16px;
+    }
+
+    .about-hero .hero-proof {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero-card,
+    .story-plaque {
+        position: static;
+        margin-top: 18px;
+        max-width: none;
+    }
+
+    .about-cta-box {
+        padding: 28px 22px;
+    }
+}
+
+@media (max-width: 640px) {
+    .about-hero .page-title {
+        font-size: 2.5rem;
+    }
+
+    .about-hero .page-description,
+    .story-content p,
+    .credential-card p,
+    .philosophy-card p,
+    .team-card p,
+    .feature-item span,
+    .recognition-bar span {
+        font-size: 0.98rem;
+    }
+}
+
+

@@ -1,0 +1,247 @@
+﻿body {
+    background: radial-gradient(circle at top, rgba(204, 170, 131, 0.08), transparent 28%), var(--light);
+}
+
+.case-hero {
+    padding: 150px 0 88px;
+    position: relative;
+    z-index: 2;
+}
+
+.case-hero-shell {
+    width: min(1280px, calc(100% - 40px));
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+    gap: 28px;
+    align-items: center;
+}
+
+.case-hero-copy {
+    max-width: 780px;
+}
+
+.case-hero .page-title {
+    font-size: clamp(2.9rem, 5vw, 5.2rem);
+    line-height: 1.02;
+    margin: 16px 0 18px;
+}
+
+.case-hero .page-description {
+    max-width: 660px;
+    font-size: 1.08rem;
+    line-height: 1.85;
+}
+
+.case-hero-card,
+.signal-card,
+.offer-card,
+.fit-card,
+.page-card,
+.deliverable-card,
+.case-cta-box {
+    border: 1px solid rgba(156, 115, 73, 0.12);
+    box-shadow: var(--shadow);
+}
+
+.case-hero-card {
+    padding: 30px;
+    border-radius: 32px;
+    background: linear-gradient(135deg, rgba(31, 25, 23, 0.98), rgba(48, 37, 31, 0.94));
+}
+
+.case-hero-card .panel-kicker {
+    color: var(--accent-light);
+}
+
+.case-hero-card .hero-checklist li {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.case-hero-card .hero-checklist li::before {
+    background: var(--accent-light);
+}
+
+.case-section,
+.case-overview {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 96px;
+}
+
+.signal-grid,
+.offer-grid,
+.fit-grid,
+.page-grid,
+.deliverable-grid {
+    display: grid;
+    gap: 18px;
+}
+
+.signal-grid {
+    width: min(1280px, calc(100% - 40px));
+    margin: 0 auto;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.signal-card,
+.offer-card,
+.fit-card,
+.page-card,
+.deliverable-card {
+    padding: 24px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.signal-card strong,
+.deliverable-card strong {
+    display: block;
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+
+.signal-card span,
+.offer-card p,
+.fit-card p,
+.page-card li,
+.deliverable-card span {
+    color: var(--text-muted);
+    line-height: 1.75;
+}
+
+.offer-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.offer-card h3,
+.fit-card h3,
+.page-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.fit-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.page-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.page-card ul {
+    display: grid;
+    gap: 10px;
+    list-style: none;
+}
+
+.page-card li {
+    position: relative;
+    padding-left: 18px;
+}
+
+.page-card li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+.deliverable-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.case-cta-box {
+    padding: 38px;
+    border-radius: 34px;
+    background: linear-gradient(135deg, rgba(31, 25, 23, 0.98), rgba(48, 37, 31, 0.94));
+}
+
+.case-cta-box .section-kicker,
+.case-cta-box .section-title,
+.case-cta-box .section-copy {
+    color: #fff;
+}
+
+.case-cta-box .section-copy {
+    margin-top: 14px;
+    max-width: 760px;
+}
+
+.case-cta-box .btn-outline {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.case-cta-box .btn-outline:hover {
+    background: rgba(255, 255, 255, 0.16);
+}
+
+@media (max-width: 1180px) {
+    .case-hero-shell,
+    .offer-grid,
+    .page-grid,
+    .deliverable-grid,
+    .signal-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .case-hero-shell {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 860px) {
+    .case-hero {
+        padding: 128px 0 72px;
+    }
+
+    .case-hero-shell,
+    .offer-grid,
+    .fit-grid,
+    .page-grid,
+    .deliverable-grid,
+    .signal-grid,
+    .section-shell {
+        width: min(1280px, calc(100% - 24px));
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .case-hero .page-title {
+        font-size: 2.45rem;
+    }
+
+    .case-hero .page-description,
+    .signal-card span,
+    .offer-card p,
+    .fit-card p,
+    .page-card li,
+    .deliverable-card span,
+    .case-cta-box .section-copy {
+        font-size: 0.98rem;
+    }
+
+    .case-hero-card,
+    .signal-card,
+    .offer-card,
+    .fit-card,
+    .page-card,
+    .deliverable-card,
+    .case-cta-box {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
